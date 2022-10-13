@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: silkscreen;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+  width: 50%;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: double 3pt darkblue;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+.numbox {
+  width: 8%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2pt darkblue;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+}
+button {
+  padding: 1em;
+  border-radius: 8px;
+  border: none;
+  background-color: aquamarine;
+  margin-left: 30%;
+  margin-top: 1em;
+  font-family: silkscreen;
+}
+.display {
+  text-align: center;
+  font-size: 60pt;
+}

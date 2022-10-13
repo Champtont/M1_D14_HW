@@ -24,16 +24,26 @@ const displayLastNum = (newNum) => {
   body.appendChild(display);
 };
 
+///????let numboxes = document.querySelectorAll(".numbox"); how are there no nodes here?
+
 //creating a random number to call later
 const getRandomNum = () => {
   let newNum = Math.floor(Math.random() * 76) + 1;
-  //need if/else to reset.
+
+  for (let i = 0; i < myNumArray.length; i++) {
+    if (newNum === myNumArray.indexOf(myNumArray[i])) {
+      numboxes.classList.add("highlight");
+    }
+  }
   displayLastNum(newNum);
 };
 
+//const match = () => {
+//};
+
 //Event Listeners
 randomize.addEventListener("click", getRandomNum);
-
+//randomize.addEventListener("click", match);
 //things that happen as soon as loaded
 window.onload = () => {
   generateCard();

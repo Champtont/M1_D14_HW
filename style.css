@@ -47,3 +47,7 @@ button {
   text-align: center;
   font-size: 60pt;
 }
+.highlight {
+  background-color: crimson;
+  color: bisque;
+}

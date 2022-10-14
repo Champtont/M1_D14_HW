@@ -18,10 +18,12 @@ const generateCard = () => {
 //just having fun, trying to display the called numbers
 
 const displayLastNum = (newNum) => {
-  const display = document.createElement("div");
+  let display = document.createElement("div");
   display.className = "display";
   display.innerText = newNum;
   body.appendChild(display);
+
+  console.log("push");
 };
 
 ///????let numboxes = document.querySelectorAll(".numbox"); how are there no nodes here?
@@ -29,12 +31,6 @@ const displayLastNum = (newNum) => {
 //creating a random number to call later
 const getRandomNum = () => {
   let newNum = Math.floor(Math.random() * 76) + 1;
-
-  for (let i = 0; i < myNumArray.length; i++) {
-    if (newNum === myNumArray.indexOf(myNumArray[i])) {
-      numboxes.classList.add("highlight");
-    }
-  }
   displayLastNum(newNum);
 };
 

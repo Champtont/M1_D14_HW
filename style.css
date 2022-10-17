@@ -12,6 +12,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 #card {
   width: 50%;
@@ -46,8 +47,24 @@ button {
 .display {
   text-align: center;
   font-size: 60pt;
+  border: none;
 }
 .highlight {
   background-color: crimson;
   color: bisque;
+}
+.tracker {
+  border-right: solid 1pt darkblue;
+  border-left: solid 1pt darkblue;
+  max-width: 50px;
+  border-radius: 10px;
+  margin-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+#container2 {
+  display: flex;
 }
